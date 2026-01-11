@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creamella | Coffee Collection</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#f2f2f2;
+  color:#333;
+}
+
+nav{
+  background:#fff;
+  padding:18px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#333;
+  font-size:14px;
+}
+
+.active{
+  background:#7b4b27;
+  color:#fff;
+  padding:6px 16px;
+  border-radius:20px;
+}
+  
+.header{
+  text-align:center;
+  padding:50px 20px 30px;
+}
+
+.header h1{
+  font-size:36px;
+}
+
+.header span{
+  color:#7b4b27;
+}
+
+.header p{
+  max-width:650px;
+  margin:10px auto;
+  font-size:14px;
+  color:#777;
+}
+
+.grid{
+  padding:40px 60px 80px;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:30px;
+}
+
+.card{
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+.card-body{
+  padding:20px;
+}
+
+.card-body h3{
+  font-size:17px;
+}
+
+.card-body p{
+  font-size:13px;
+  color:#777;
+  margin-bottom:15px;
+}
+
+.option{
+  margin-bottom:10px;
+  font-size:13px;
+}
+
+.option label{
+  margin-right:10px;
+}
+
+.slider{
+  width:100%;
+}
+  
+button{
+  width:100%;
+  padding:10px;
+  background:#7b4b27;
+  border:none;
+  border-radius:25px;
+  color:white;
+  font-size:14px;
+  cursor:pointer;
+}
+
+@media(max-width:1024px){
+  .grid{grid-template-columns:repeat(2,1fr);}
+}
+@media(max-width:600px){
+  nav{padding:18px 20px;}
+  .grid{grid-template-columns:1fr;padding:20px;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <strong>☕ Creamella</strong>
+  <div>
+    <a href="#">Home</a>
+    <a href="#" class="active">Gallery</a>
+    <a href="#">Order</a>
+  </div>
+</nav>
+
+<section class="header">
+  <h1>Our Coffee <span>Collection</span></h1>
+  <p>Customize every aspect of your perfect cup. Choose your strength, milk, sweetness, and temperature.</p>
+</section>
+
+<section class="grid">
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+  <div class="card-body">
+    <h3>Signature Espresso</h3>
+    <p>Rich, bold shot of pure coffee perfection with notes of dark chocolate</p>
+    <div class="option"><strong>Temperature</strong><br><label><input type="radio"> Hot</label><label><input type="radio"> Cold</label></div>
+    <div class="option"><strong>Strength</strong><br><label><input type="radio"> Mild</label><label><input type="radio"> Medium</label><label><input type="radio"> Strong</label></div>
+    <div class="option"><strong>Milk Amount</strong><br><label><input type="radio"> Light</label><label><input type="radio"> Regular</label><label><input type="radio"> Creamy</label></div>
+    <div class="option"><strong>Sweetness: 50%</strong><input type="range" class="slider"></div>
+    <button>add to cart</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+  <div class="card-body">
+    <h3>Velvet Latte</h3>
+    <p>Smooth espresso meets steamed milk with artisan latte art</p>
+    <div class="option"><strong>Temperature</strong><br><label><input type="radio"> Hot</label><label><input type="radio"> Cold</label></div>
+    <div class="option"><strong>Strength</strong><br><label><input type="radio"> Mild</label><label><input type="radio"> Medium</label><label><input type="radio"> Strong</label></div>
+    <div class="option"><strong>Milk Amount</strong><br><label><input type="radio"> Light</label><label><input type="radio"> Regular</label><label><input type="radio"> Creamy</label></div>
+    <div class="option"><strong>Sweetness: 50%</strong><input type="range" class="slider"></div>
+    <button>add to cart</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1510626176961-4b37d6af9f4c">
+  <div class="card-body">
+    <h3>Caramel Frost</h3>
+    <p>Iced perfection with caramel drizzle and creamy layers</p>
+    <div class="option"><strong>Temperature</strong><br><label><input type="radio"> Hot</label><label><input type="radio"> Cold</label></div>
+    <div class="option"><strong>Strength</strong><br><label><input type="radio"> Mild</label><label><input type="radio"> Medium</label><label><input type="radio"> Strong</label></div>
+    <div class="option"><strong>Milk Amount</strong><br><label><input type="radio"> Light</label><label><input type="radio"> Regular</label><label><input type="radio"> Creamy</label></div>
+    <div class="option"><strong>Sweetness: 50%</strong><input type="range" class="slider"></div>
+    <button>add to cart</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1509785307050-d4066910ec1e">
+  <div class="card-body">
+    <h3>Classic Cappuccino</h3>
+    <p>Equal parts espresso, steamed milk, and velvety foam</p>
+    <div class="option"><strong>Temperature</strong><br><label><input type="radio"> Hot</label><label><input type="radio"> Cold</label></div>
+    <div class="option"><strong>Strength</strong><br><label><input type="radio"> Mild</label><label><input type="radio"> Medium</label><label><input type="radio"> Strong</label></div>
+    <div class="option"><strong>Milk Amount</strong><br><label><input type="radio"> Light</label><label><input type="radio"> Regular</label><label><input type="radio"> Creamy</label></div>
+    <div class="option"><strong>Sweetness: 50%</strong><input type="range" class="slider"></div>
+    <button>add to cart</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86">
+  <div class="card-body">
+    <h3>Chocolate Mocha</h3>
+    <p>Rich chocolate meets espresso topped with whipped cream</p>
+    <div class="option"><strong>Temperature</strong><br><label><input type="radio"> Hot</label><label><input type="radio"> Cold</label></div>
+    <div class="option"><strong>Strength</strong><br><label><input type="radio"> Mild</label><label><input type="radio"> Medium</label><label><input type="radio"> Strong</label></div>
+    <div class="option"><strong>Milk Amount</strong><br><label><input type="radio"> Light</label><label><input type="radio"> Regular</label><label><input type="radio"> Creamy</label></div>
+    <div class="option"><strong>Sweetness: 50%</strong><input type="range" class="slider"></div>
+    <button>add to cart</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="https://images.unsplash.com/photo-1522992319-0365e5f11656">
+  <div class="card-body">
+    <h3>Honey Latte</h3>
+    <p>Our specialty latte sweetened with natural honey</p>
+    <div class="option"><strong>Temperature</strong><br><label><input type="radio"> Hot</label><label><input type="radio"> Cold</label></div>
+    <div class="option"><strong>Strength</strong><br><label><input type="radio"> Mild</label><label><input type="radio"> Medium</label><label><input type="radio"> Strong</label></div>
+    <div class="option"><strong>Milk Amount</strong><br><label><input type="radio"> Light</label><label><input type="radio"> Regular</label><label><input type="radio"> Creamy</label></div>
+    <div class="option"><strong>Sweetness: 50%</strong><input type="range" class="slider"></div>
+    <button>add to cart</button>
+  </div>
+</div>
+
+</section>
+
+</body>
+</html>
